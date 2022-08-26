@@ -1,0 +1,26 @@
+.card-cover {
+  width: 430px;
+  height: 275px;
+  background-repeat: no-repeat;
+  background-size : cover;
+  border-radius: 20px;
+  transition-property: filter, width, height, background, transform;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-duration: .2s;
+  position: relative;
+  backface-visibility: hidden;
+  box-shadow: -1px 16px 48px -1px rgba(34, 60, 80, 0.63);
+
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card:hover > .card-cover {
+  /*width: 440px;*/
+  /*height: 285px;*/
+  filter: brightness(80%);
+  transform: perspective(600px) rotateY(-180deg);
+}

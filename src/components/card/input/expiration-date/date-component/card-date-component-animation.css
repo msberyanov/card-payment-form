@@ -1,0 +1,8 @@
+@keyframes card-date-component-appearance {
+  0% { transform: translateY(20px); }
+  100% { transform: none; }
+}
+
+.card-date-component-appearance {
+  animation: card-date-component-appearance .2s;
+}

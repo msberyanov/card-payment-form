@@ -1,0 +1,16 @@
+.card-input-form {
+  display: inline-block;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 570px;
+  margin-top: 220px;
+  border-radius: 30px;
+  box-shadow: -2px 16px 40px -1px rgba(34, 60, 80, 0.2);
+  text-align: start;
+}
+
+.card-input-form-zone {
+  width: 100%;
+  text-align: center;
+  margin-top: -640px;
+}

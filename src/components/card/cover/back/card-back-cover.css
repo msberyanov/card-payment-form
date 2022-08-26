@@ -1,0 +1,42 @@
+.card-back-cover {
+  width: 430px;
+  height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  transition-property: filter, width, height, background, transform;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-duration: .2s;
+  position: relative;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  box-shadow: -1px 16px 48px -1px rgba(34, 60, 80, 0.63);
+
+  top: -275px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.card-back-cover-background {
+  position: absolute;
+  transform: scale(1.5, 1.5);
+  z-index: 1;
+}
+
+.card-back-cover-background img {
+  width: 110%;
+  height: 110%;
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.card:hover > .card-back-cover {
+  /*width: 440px;*/
+  /*height: 285px;*/
+  filter: brightness(80%);
+  transform: perspective(600px) rotateY(0deg);
+}

@@ -1,0 +1,19 @@
+.cat {
+  content: url("./images/cat.jpg");
+}
+
+.dog {
+  content: url("./images/dog.jpg");
+}
+
+.cat-cover {
+  background-image: url("./images/cat.jpg");
+}
+
+.dog-cover {
+  background-image: url("./images/dog.jpg");
+}
+
+
+
+

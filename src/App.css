@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "CreditCard";
+  src: local("CreditCard"),
+  url("./fonts/credit-card.otf") format("truetype");
+}
+
+html {
+  background: linear-gradient(270deg, #ee83ef, #2b98d5);
+  background-size: 400% 400%;
+
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,8 @@
+@keyframes card-holder-symbol-appearance {
+  0% { transform: translateX(20px); }
+  100% { transform: none; }
+}
+
+.card-holder-symbol-appearance {
+  animation: card-holder-symbol-appearance .2s;
+}

@@ -1,0 +1,8 @@
+@keyframes card-digit-appearance {
+  0% { transform: translateY(-20px); }
+  100% { transform: none; }
+}
+
+.card-digit-appearance {
+  animation: card-digit-appearance .2s;
+}

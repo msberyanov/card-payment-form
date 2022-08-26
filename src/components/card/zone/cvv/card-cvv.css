@@ -1,0 +1,24 @@
+.card-cvv {
+  height: 40px;
+  width: 90%;
+  background: rgba(255,255,255,0.9);
+  z-index: 2;
+  margin-top: 100px;
+  margin-left: 22px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.card-cvv-zone {
+  text-align: center;
+  width: 100%;
+}
+
+.card-cvv-title {
+  font-family: CreditCard, serif;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  margin-top: 155px;
+  margin-left: 330px;
+}

@@ -1,0 +1,12 @@
+.card-number {
+  font-family: "CreditCard", serif;
+  color: white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.card-number-part {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 40px;
+}
