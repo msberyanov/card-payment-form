@@ -6,7 +6,7 @@
   border-radius: 20px;
   transition-property: filter, width, height, background, transform;
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition-duration: .2s;
+  transition-duration: .4s;
   position: relative;
   transform: perspective(600px) rotateY(180deg);
   backface-visibility: hidden;
@@ -34,9 +34,8 @@
   z-index: 1;
 }
 
-.card:hover > .card-back-cover {
+.card-back-cover-turned {
   /*width: 440px;*/
   /*height: 285px;*/
-  filter: brightness(80%);
   transform: perspective(600px) rotateY(0deg);
 }

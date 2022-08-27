@@ -1,14 +1,15 @@
+import React from "react";
 import { validateServiceKeys } from "./validate-service-keys";
 import { validateDigits } from "./validate-digits";
-import { NUMBER_DIGITS_AMOUNT } from "../../../utils/parse-card-number";
-import React from "react";
 
-export const validateCardNumber = (
+export const MAX_CARD_CVV_LENGTH = 3;
+
+export const validateCardCvv = (
   event: React.KeyboardEvent<HTMLInputElement>,
-  currentCardNumberLength: number
+  currentCardCvvLength: number
 ) => {
   if ((validateServiceKeys(event) && !validateDigits(event.key))
-    || (validateServiceKeys(event) && currentCardNumberLength >= NUMBER_DIGITS_AMOUNT)) {
+    || (validateServiceKeys(event) && currentCardCvvLength >= MAX_CARD_CVV_LENGTH)) {
     event.preventDefault();
   }
 }

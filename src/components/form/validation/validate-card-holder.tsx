@@ -11,7 +11,7 @@ export const validateCardHolder = (
   currentCardHolderLength: number
 ) => {
   if ((validateServiceKeys(event) && !validateLetters(event.key))
-    || (validateOperationalKeys(event) && currentCardHolderLength >= MAX_CARD_HOLDER_LENGTH)) {
+    || (validateServiceKeys(event) && currentCardHolderLength >= MAX_CARD_HOLDER_LENGTH)) {
     event.preventDefault();
   }
 }

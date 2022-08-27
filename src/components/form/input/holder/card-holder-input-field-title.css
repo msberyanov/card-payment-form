@@ -1,4 +1,5 @@
 .card-holder-input-field-title {
+  display: inline-block;
   font-family: "CreditCard", serif;
   color: rgba(255,255,255,0.8);
   height: 50px;

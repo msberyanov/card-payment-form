@@ -1,0 +1,8 @@
+@keyframes card-cvv-digit-appearance {
+  0% { transform: translateY(-10px); }
+  100% { transform: none; }
+}
+
+.card-cvv-digit-appearance {
+  animation: card-cvv-digit-appearance .2s;
+}

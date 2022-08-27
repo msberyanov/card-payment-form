@@ -8,7 +8,7 @@ export const CardHolder: React.FC = () => {
 
   return (
     <div className="card-holder card-text-element">
-      {[...cardHolder.toUpperCase()].map((cardHolderSymbol, index) =>
+      {[...cardHolder].map((cardHolderSymbol, index) =>
         <CardHolderSymbol symbolKey={cardHolderSymbol + index} symbol={cardHolderSymbol}/>)
       }
     </div>

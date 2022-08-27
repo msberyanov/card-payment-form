@@ -1,0 +1,21 @@
+.card-expiration-date-select {
+  display: inline-block;
+  height: 60px;
+  width: 44%;
+  border-radius: 15px;
+  margin-top: -15px;
+  margin-right: 20px;
+  border: none;
+  -webkit-appearance:none;
+  background: rgba(255, 255, 255, 0.2) url('./images/arrow_down.png') no-repeat 88% 50%;
+  background-size: 17px 17px;
+  color: white;
+  font-family: "CreditCard", serif;
+  font-size: 19px;
+  padding-left: 20px;
+}
+
+.card-expiration-date-select-zone {
+  display: inline-block;
+  width: 61%;
+}

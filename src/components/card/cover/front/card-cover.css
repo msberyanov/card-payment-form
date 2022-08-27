@@ -1,3 +1,5 @@
+@import url("../../../form/input/cvv/card-cvv-input-field.css");
+
 .card-cover {
   width: 430px;
   height: 275px;
@@ -6,7 +8,7 @@
   border-radius: 20px;
   transition-property: filter, width, height, background, transform;
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition-duration: .2s;
+  transition-duration: .4s;
   position: relative;
   backface-visibility: hidden;
   box-shadow: -1px 16px 48px -1px rgba(34, 60, 80, 0.63);
@@ -18,9 +20,8 @@
   margin: auto;
 }
 
-.card:hover > .card-cover {
+.card-cover-turned {
   /*width: 440px;*/
   /*height: 285px;*/
-  filter: brightness(80%);
   transform: perspective(600px) rotateY(-180deg);
 }

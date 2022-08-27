@@ -6,13 +6,16 @@ import { CardNumber } from "../../input/number/card-number";
 import { CardHolderZone } from "../../zone/holder/card-holder-zone";
 import { CardExpirationDateZone } from "../../zone/expiration-date/card-expiration-date-zone";
 import { CoverProps } from "../cover-props";
+import { useInputContext } from "../../../../App";
 
 export const CardCover : React.FC<CoverProps> = ({
   cardImage,
   toggleImageType
 }) => {
+  const {cardTurned} = useInputContext();
+
   return (
-    <div className={`card-cover ${cardImage}-cover`}
+    <div className={`card-cover ${cardImage}-cover ${cardTurned ? "card-cover-turned" : ""}`}
          onClick={toggleImageType}>
       <CardService/>
       <CardNfc/>
