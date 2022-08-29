@@ -26,8 +26,7 @@ export const useCard = () => {
     <div className="card">
       <CardCover cardImage={imageType}
                  toggleImageType={toggleImageType}/>
-      <CardBackCover cardImage={imageType}
-                     toggleImageType={toggleImageType}/>
+      <CardBackCover cardImage={imageType}/>
     </div>
   ), [imageType, toggleImageType]);
 
