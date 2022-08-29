@@ -13,11 +13,20 @@
   position: absolute;
 }
 
-.card-service .visa-logo {
+.card-service .logo {
   width: 100px;
 }
 
-.card-back-service .visa-logo {
+@keyframes card-logo-appearance {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card-service .logo {
+  animation: card-logo-appearance .5s;
+}
+
+.card-back-service .logo {
   width: 100px;
   margin-top: 185px;
   margin-left: 300px;

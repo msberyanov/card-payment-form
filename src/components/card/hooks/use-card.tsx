@@ -13,8 +13,6 @@ export const useCard = () => {
   const toggleImageType = useCallback(() => {
     const followingImageType = nextImageType();
 
-    console.log(followingImageType);
-
     setImageType(followingImageType);
   }, []);
 

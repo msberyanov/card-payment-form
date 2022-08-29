@@ -17,7 +17,6 @@ export const CardNumberInputField: React.FC<CardInputFieldProps> = ({
         onFocus={onFocus}
         onInput={event => {
           (event.target as HTMLInputElement).value = formatCreditCardNumber( (event.target as HTMLInputElement).value);
-          console.log((event.target as HTMLInputElement).value);
         }}
       />
     </div>
