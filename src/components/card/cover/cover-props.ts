@@ -1,4 +1,4 @@
-import { ImageType } from "./front/type/image-type";
+import { ImageType } from "../type/image-type";
 
 export interface CoverProps {
   cardImage: ImageType;

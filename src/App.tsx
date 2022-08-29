@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Card } from "./components/card/card";
 import { useInputForm } from "./components/form/hooks/use-input-form";
+import { useCard } from "./components/card/hooks/use-card";
 
 interface InputContextProps {
   cardNumber: string;
@@ -28,6 +28,8 @@ function App() {
     turnCardFront
   ] = useInputForm();
 
+  const [Card] = useCard();
+
   useEffect(() => {
     document.getElementById("root")?.addEventListener("click", event => {
       if ((event.target as HTMLInputElement).className.includes("card-cvv-input-field")) {
@@ -41,7 +43,7 @@ function App() {
   return (
     <>
       <InputContext.Provider value={{cardNumber, cardHolder, cardCvv, cardExpirationDateMonth, cardExpirationDateYear, cardTurned}}>
-        <Card/>
+        {Card}
       </InputContext.Provider>
       {CardInputForm}
     </>
