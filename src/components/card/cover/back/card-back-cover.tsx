@@ -5,7 +5,7 @@ import { CardTape } from "../../zone/tape/card-tape";
 import { CardCvvLine } from "../../zone/cvv/card-cvv-line";
 import { CardBackService } from "../../zone/service/card-back-service";
 import { CardCvvTitle } from "../../zone/cvv/card-cvv-title";
-import { useInputContext } from "../../../../App";
+import { useInputContext } from "../../../../card-app";
 import { revealService } from "../../../../utils/reveal-service";
 
 export const CardBackCover : React.FC<CoverProps> = ({

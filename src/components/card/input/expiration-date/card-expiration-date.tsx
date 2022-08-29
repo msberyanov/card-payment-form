@@ -1,6 +1,6 @@
 import React from "react";
 import "./card-expiration-date.css"
-import { useInputContext } from "../../../../App";
+import { useInputContext } from "../../../../card-app";
 import { CardDateComponent } from "./date-component/card-date-component";
 
 const CARD_DATE_DIVIDER = "/";

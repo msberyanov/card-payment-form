@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import './card-app.css';
 import { useInputForm } from "./components/form/hooks/use-input-form";
 import { useCard } from "./components/card/hooks/use-card";
 
@@ -16,7 +16,7 @@ const InputContext = React.createContext<InputContextProps>({} as InputContextPr
 
 export const useInputContext = () => React.useContext(InputContext);
 
-function App() {
+function CardApp() {
   const [
     cardNumber,
     cardHolder,
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default CardApp;

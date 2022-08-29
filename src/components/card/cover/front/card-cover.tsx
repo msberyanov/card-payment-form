@@ -6,7 +6,7 @@ import { CardNumber } from "../../input/number/card-number";
 import { CardHolderZone } from "../../zone/holder/card-holder-zone";
 import { CardExpirationDateZone } from "../../zone/expiration-date/card-expiration-date-zone";
 import { CoverProps } from "../cover-props";
-import { useInputContext } from "../../../../App";
+import { useInputContext } from "../../../../card-app";
 import { revealService } from "../../../../utils/reveal-service";
 
 export const CardCover : React.FC<CoverProps> = ({

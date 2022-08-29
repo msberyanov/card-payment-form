@@ -2,7 +2,7 @@ import React from "react";
 import "./card-number.css"
 import { parseCardNumber } from "../../../../utils/parse-card-number";
 import { CardDigit } from "./digit/card-digit";
-import { useInputContext } from "../../../../App";
+import { useInputContext } from "../../../../card-app";
 
 export const CardNumber: React.FC = () => {
   const {cardNumber} = useInputContext();
