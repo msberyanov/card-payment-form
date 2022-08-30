@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Card Payment Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was written in React.JS.
 
-## Available Scripts
+Below, you can see how it looks:
 
-In the project directory, you can run:
+![MasterCard](screenshots/screenshot-1.png)
 
-### `npm start`
+When entering field information, corresponding card zones also change with animated effect.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+According to the card number entered, a payment system is adaptively chosen.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For example, Mir Payment System:
 
-### `npm test`
+![Mir](screenshots/screenshot-2.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+And Visa Payment System:
 
-### `npm run build`
+![Visa](screenshots/screenshot-3.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Other payment systems are ignored due to the "pet project" training purposes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Moreover, when CVC2/CVV2 code is entered (the input zone is focused), the card flips with animation:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Card Back](screenshots/screenshot-4.png)
 
-### `npm run eject`
+Also, by clicking at card itself, it is possible to change its cover. The cover also influences page background.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For example, here is the cat:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Cat Card Cover](screenshots/screenshot-5.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The kitty:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Kitty Card Cover](screenshots/screenshot-6.png)
 
-## Learn More
+And the dog:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Dog Card Cover](screenshots/screenshot-7.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The page background is also animated.
+
+
+
